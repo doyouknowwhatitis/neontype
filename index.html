@@ -231,21 +231,18 @@
             max-width: 520px;
             line-height: 1.5;
         }
-
+        
         #menu {
-            background: radial-gradient(circle at 15% 20%, rgba(90, 200, 255, 0.18), transparent 40%),
-                radial-gradient(circle at 80% 10%, rgba(255, 136, 61, 0.16), transparent 35%),
-                radial-gradient(circle at 65% 80%, rgba(255, 216, 107, 0.12), transparent 40%),
-                linear-gradient(180deg, rgba(7, 9, 16, 0.95), rgba(5, 7, 12, 0.92));
+            background: radial-gradient(circle at 15% 20%, rgba(90, 200, 255, 0.18), transparent 40%), radial-gradient(circle at 80% 10%, rgba(255, 136, 61, 0.16), transparent 35%), radial-gradient(circle at 65% 80%, rgba(255, 216, 107, 0.12), transparent 40%), linear-gradient(180deg, rgba(7, 9, 16, 0.95), rgba(5, 7, 12, 0.92));
             overflow: hidden;
         }
-
+        
         #menu .menu-bg {
             position: absolute;
             inset: 0;
             pointer-events: none;
         }
-
+        
         #menu .menu-bg::before {
             content: "";
             position: absolute;
@@ -254,7 +251,7 @@
             animation: menu-drift 24s linear infinite;
             opacity: 0.5;
         }
-
+        
         #menu .menu-bg::after {
             content: "";
             position: absolute;
@@ -262,7 +259,7 @@
             background: repeating-linear-gradient(0deg, rgba(12, 16, 26, 0.4) 0 2px, transparent 2px 5px);
             opacity: 0.35;
         }
-
+        
         .menu-orb {
             position: absolute;
             width: 320px;
@@ -272,13 +269,13 @@
             filter: blur(0.5px);
             animation: menu-float 10s ease-in-out infinite;
         }
-
+        
         .menu-orb.orb-a {
             top: -80px;
             left: -40px;
             animation-duration: 12s;
         }
-
+        
         .menu-orb.orb-b {
             bottom: -140px;
             right: -100px;
@@ -287,7 +284,7 @@
             background: radial-gradient(circle, rgba(255, 138, 61, 0.28), rgba(12, 16, 26, 0.05) 70%, transparent 72%);
             animation-duration: 14s;
         }
-
+        
         .menu-scan {
             position: absolute;
             left: 0;
@@ -298,7 +295,7 @@
             filter: blur(6px);
             animation: menu-sweep 6s linear infinite;
         }
-
+        
         .menu-shell {
             position: relative;
             z-index: 2;
@@ -308,7 +305,7 @@
             align-items: center;
             justify-content: space-between;
         }
-
+        
         .menu-left {
             flex: 1;
             min-width: 280px;
@@ -316,7 +313,7 @@
             flex-direction: column;
             gap: 16px;
         }
-
+        
         .menu-right {
             width: min(360px, 90vw);
             background: rgba(8, 12, 22, 0.72);
@@ -326,14 +323,14 @@
             box-shadow: 0 0 28px rgba(40, 120, 200, 0.25);
             backdrop-filter: blur(8px);
         }
-
+        
         .menu-kicker {
             letter-spacing: 4px;
             text-transform: uppercase;
             font-size: 12px;
             color: rgba(160, 200, 255, 0.7);
         }
-
+        
         .menu-title {
             font-size: clamp(44px, 7vw, 70px);
             font-weight: 900;
@@ -342,7 +339,7 @@
             position: relative;
             text-shadow: 0 0 30px rgba(125, 249, 255, 0.6);
         }
-
+        
         .menu-title::after {
             content: attr(data-glitch);
             position: absolute;
@@ -354,41 +351,41 @@
             animation: menu-glitch 3s infinite;
             pointer-events: none;
         }
-
+        
         .menu-sub {
             font-size: 15px;
             color: rgba(180, 200, 240, 0.85);
             max-width: 460px;
             line-height: 1.6;
         }
-
+        
         .menu-cta {
             display: flex;
             align-items: center;
             gap: 16px;
             flex-wrap: wrap;
         }
-
+        
         .menu-start {
             display: flex;
             flex-direction: column;
             gap: 6px;
             margin-top: 6px;
         }
-
+        
         .menu-start-label {
             font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: rgba(160, 200, 255, 0.7);
         }
-
+        
         .start-word {
             display: flex;
             gap: 6px;
             flex-wrap: wrap;
         }
-
+        
         .start-letter {
             font-size: 20px;
             font-weight: 800;
@@ -400,46 +397,46 @@
             color: #e9f9ff;
             box-shadow: inset 0 0 10px rgba(80, 140, 220, 0.2);
         }
-
+        
         .start-letter.done {
             color: #7df9ff;
             border-color: rgba(125, 249, 255, 0.6);
             background: rgba(40, 90, 140, 0.6);
             box-shadow: 0 0 12px rgba(125, 249, 255, 0.4);
         }
-
+        
         .start-letter.bad {
             color: #ff5b6b;
             border-color: rgba(255, 91, 107, 0.6);
             animation: start-shake 0.2s linear;
         }
-
+        
         .start-hint {
             font-size: 11px;
             color: rgba(160, 190, 230, 0.7);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-
+        
         .btn.big {
             padding: 14px 24px;
             font-size: 16px;
             letter-spacing: 1px;
         }
-
+        
         .menu-hint {
             font-size: 12px;
             color: rgba(160, 190, 230, 0.7);
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
+        
         .menu-stats {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
-
+        
         .stat-pill {
             padding: 8px 12px;
             border-radius: 999px;
@@ -449,7 +446,7 @@
             color: rgba(190, 210, 240, 0.85);
             box-shadow: inset 0 0 12px rgba(80, 140, 220, 0.15);
         }
-
+        
         .menu-features {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -457,7 +454,7 @@
             font-size: 12px;
             color: rgba(180, 205, 235, 0.85);
         }
-
+        
         .feature {
             display: flex;
             align-items: center;
@@ -467,7 +464,7 @@
             border-radius: 10px;
             padding: 8px 10px;
         }
-
+        
         .feature-dot {
             width: 8px;
             height: 8px;
@@ -475,7 +472,7 @@
             background: radial-gradient(circle, rgba(125, 249, 255, 0.9), rgba(125, 249, 255, 0.2));
             box-shadow: 0 0 10px rgba(125, 249, 255, 0.7);
         }
-
+        
         .menu-card-title {
             font-size: 14px;
             letter-spacing: 2px;
@@ -483,33 +480,33 @@
             color: rgba(160, 200, 255, 0.75);
             margin-bottom: 8px;
         }
-
+        
         .menu-block {
             margin-bottom: 14px;
         }
-
+        
         .menu-block .label {
             margin-bottom: 6px;
             font-size: 11px;
         }
-
+        
         .chip-row {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
         }
-
+        
         .chip-row .btn {
             padding: 8px 12px;
             font-size: 12px;
         }
-
+        
         .menu-divider {
             height: 1px;
             background: linear-gradient(90deg, transparent, rgba(125, 249, 255, 0.3), transparent);
             margin: 10px 0;
         }
-
+        
         .menu-keys {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -517,7 +514,7 @@
             font-size: 11px;
             color: rgba(170, 190, 220, 0.85);
         }
-
+        
         .key-chip {
             display: flex;
             align-items: center;
@@ -527,7 +524,7 @@
             background: rgba(10, 14, 24, 0.6);
             border: 1px solid rgba(125, 249, 255, 0.15);
         }
-
+        
         .key {
             font-weight: 700;
             color: #e9f9ff;
@@ -536,7 +533,7 @@
             border-radius: 6px;
             border: 1px solid rgba(125, 249, 255, 0.25);
         }
-
+        
         @keyframes menu-drift {
             0% {
                 transform: translate3d(0, 0, 0) rotate(0deg);
@@ -545,7 +542,7 @@
                 transform: translate3d(-10%, -5%, 0) rotate(8deg);
             }
         }
-
+        
         @keyframes menu-float {
             0%,
             100% {
@@ -555,7 +552,7 @@
                 transform: translate3d(0, 18px, 0);
             }
         }
-
+        
         @keyframes menu-sweep {
             0% {
                 transform: translateX(-60%);
@@ -564,7 +561,7 @@
                 transform: translateX(60%);
             }
         }
-
+        
         @keyframes menu-glitch {
             0%,
             100% {
@@ -588,7 +585,7 @@
                 opacity: 0.4;
             }
         }
-
+        
         @keyframes start-shake {
             0% {
                 transform: translateX(0);
@@ -606,7 +603,7 @@
                 transform: translateX(0);
             }
         }
-
+        
         @media (max-width: 900px) {
             .menu-shell {
                 flex-direction: column;
@@ -1622,15 +1619,15 @@
                 }
             }
 
-      class Game {
-        constructor(canvas, ctx, ui) {
-          this.canvas = canvas;
-          this.ctx = ctx;
-          this.ui = ui;
-          this.audio = new AudioEngine();
-          this.assets = createAssets();
-          this.state = 'MENU';
-          this.sessionResults = [];
+            class Game {
+                constructor(canvas, ctx, ui) {
+                    this.canvas = canvas;
+                    this.ctx = ctx;
+                    this.ui = ui;
+                    this.audio = new AudioEngine();
+                    this.assets = createAssets();
+                    this.state = 'MENU';
+                    this.sessionResults = [];
                     this.language = 'en';
                     this.difficulty = 'normal';
                     this.ultraFX = true;
@@ -2424,28 +2421,28 @@
 
             const canvas = document.getElementById('game');
             const ctx = canvas.getContext('2d');
-      const ui = {
-        hud: document.getElementById('hud'),
-        hpSpan: document.querySelector('#hp span'),
-        speedSpan: document.querySelector('#speed span'),
-        comboEl: document.getElementById('combo'),
-        scoreSpan: document.querySelector('#score span'),
-        waveSpan: document.querySelector('#wave span'),
-        timerSpan: document.getElementById('timer'),
-        accuracySpan: document.querySelector('#accuracy span'),
-        wpmSpan: document.querySelector('#wpm span'),
-        cpmSpan: document.querySelector('#cpm span'),
-        menu: document.getElementById('menu'),
-        pause: document.getElementById('pause'),
-        gameover: document.getElementById('gameover'),
-        finalStats: document.getElementById('finalStats'),
-        sessionTable: document.getElementById('sessionTable'),
-        tap: document.getElementById('tapToType'),
-        input: document.getElementById('hiddenInput'),
-        highScore: document.querySelector('#highScore span'),
-        startWord: document.getElementById('startWord'),
-        startHint: document.getElementById('startHint')
-      };
+            const ui = {
+                hud: document.getElementById('hud'),
+                hpSpan: document.querySelector('#hp span'),
+                speedSpan: document.querySelector('#speed span'),
+                comboEl: document.getElementById('combo'),
+                scoreSpan: document.querySelector('#score span'),
+                waveSpan: document.querySelector('#wave span'),
+                timerSpan: document.getElementById('timer'),
+                accuracySpan: document.querySelector('#accuracy span'),
+                wpmSpan: document.querySelector('#wpm span'),
+                cpmSpan: document.querySelector('#cpm span'),
+                menu: document.getElementById('menu'),
+                pause: document.getElementById('pause'),
+                gameover: document.getElementById('gameover'),
+                finalStats: document.getElementById('finalStats'),
+                sessionTable: document.getElementById('sessionTable'),
+                tap: document.getElementById('tapToType'),
+                input: document.getElementById('hiddenInput'),
+                highScore: document.querySelector('#highScore span'),
+                startWord: document.getElementById('startWord'),
+                startHint: document.getElementById('startHint')
+            };
 
             const game = new Game(canvas, ctx, ui);
             game.updateMenuStats();
